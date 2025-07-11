@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViralCuts - Edição de Vídeos com IA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <h1><i class="fas fa-cut"></i> ViralCuts</h1>
+        <nav>
+            <a href="#hero-section">Início</a>
+            <a href="#features-section">Funcionalidades</a>
+            <a href="#faq-section">FAQ</a>
+            <a href="dashboard.html" class="login-button">Meu Painel</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Transforme vídeos longos<br>em 10 clipes virais.</h1>
+                <p class="hero-subtitle">Nossa IA analisa, corta e legenda seus vídeos para máximo engajamento. Crie 10x mais rápido.</p>
+                
+                <div class="upload-box" id="upload-box">
+                    <input type="file" id="video-upload-input" accept="video/*" hidden>
+                    <i class="fas fa-link upload-icon"></i>
+                    <p><strong>Arraste e solte o vídeo aqui</strong> ou cole um link do YouTube</p>
+                    <button id="upload-button" class="cta-button"><i class="fas fa-video"></i> Obter Clipes Grátis</button>
+                </div>
+
+                <div id="upload-progress" class="hidden">
+                    <p>Analisando seu vídeo... <span id="video-file-name"></span></p>
+                    <div class="progress-bar">
+                        <div class="progress" id="progress"></div>
+                    </div>
+                    <p class="ai-analysis-text" id="ai-status-text">Iniciando análise...</p> 
+                </div>
+            </div>
+        </section>
+
+        <section id="showcase-section">
+            <div class="clips-showcase-grid">
+                <div class="showcase-card">
+                    <video poster="https://images.pexels.com/photos/2022883/pexels-photo-2022883.jpeg?auto=compress&cs=tinysrgb&w=400" muted loop playsinline></video>
+                    <div class="card-overlay"><i class="fas fa-play"></i></div>
+                </div>
+                <div class="showcase-card">
+                    <video poster="https://images.pexels.com/photos/257904/pexels-photo-257904.jpeg?auto=compress&cs=tinysrgb&w=400" muted loop playsinline></video>
+                    <div class="card-overlay"><i class="fas fa-play"></i></div>
+                </div>
+                <div class="showcase-card">
+                   <video poster="https://images.pexels.com/photos/265906/pexels-photo-265906.jpeg?auto=compress&cs=tinysrgb&w=400" muted loop playsinline></video>
+                    <div class="card-overlay"><i class="fas fa-play"></i></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features-section">
+             <h2>Tudo em um só lugar. Tudo em um clique.</h2>
+             <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-wand-magic-sparkles"></i>
+                    <h3>Cortes com IA</h3>
+                    <p>Nossa IA identifica os momentos mais cativantes e cria clipes com potencial viral.</p>
+                </div>
+                 <div class="feature-card">
+                    <i class="fas fa-closed-captioning"></i>
+                    <h3>Legendas Animadas</h3>
+                    <p>Adicione legendas dinâmicas e estilosas para prender a atenção do público.</p>
+                </div>
+                 <div class="feature-card">
+                    <i class="fas fa-crop-alt"></i>
+                    <h3>Reenquadramento Automático</h3>
+                    <p>Mantém o foco na ação principal, reenquadrando o vídeo para o formato vertical (9:16).</p>
+                </div>
+             </div>
+        </section>
+
+        <section id="faq-section">
+            <h2>Perguntas Frequentes</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question"><span>Como o ViralCuts funciona?</span><i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer"><p>Ele usa IA para analisar seu vídeo, detectar picos de engajamento e cortar os melhores trechos, adicionando legendas automaticamente.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question"><span>Quais tipos de vídeo posso enviar?</span><i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer"><p>Você pode enviar qualquer tipo de vídeo longo! Vlogs, podcasts, gameplays, etc. Nosso sistema converte e analisa todos os formatos comuns.</p></div>
+                </div>
+                 <div class="faq-item">
+                    <button class="faq-question"><span>O uso é gratuito?</span><i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer"><p>Sim! Oferecemos um plano gratuito com minutos de processamento que se renovam mensalmente. Para mais tempo de vídeo e funcionalidades avançadas, temos planos pagos.</p></div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ViralCuts. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

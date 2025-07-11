@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editando Projeto - ViralCuts</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="editor-body">
+
+    <header class="editor-header">
+        <a href="dashboard.html" class="back-button"><i class="fas fa-arrow-left"></i> Voltar para Projetos</a>
+        <div class="project-title-header">
+            Editando: A Verdade Chocante por Trás da Cruz
+        </div>
+        <button class="cta-button export-button"><i class="fas fa-upload"></i> Exportar Vídeo</button>
+    </header>
+
+    <div class="editor-container">
+        <aside class="clips-list-panel">
+            <h4><i class="fas fa-list-ul"></i> Clipes Gerados (10)</h4>
+            <div class="clips-list">
+                <div class="clip-item active">
+                    <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Thumbnail do clipe">
+                    <div class="clip-item-info"><strong>Clipe 1</strong><span>0:58s | Pontuação: 98</span></div>
+                </div>
+                <div class="clip-item">
+                    <img src="https://images.pexels.com/photos/1181676/pexels-photo-1181676.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Thumbnail do clipe">
+                    <div class="clip-item-info"><strong>Clipe 2</strong><span>0:45s | Pontuação: 95</span></div>
+                </div>
+                <div class="clip-item">
+                    <img src="https://images.pexels.com/photos/4315623/pexels-photo-4315623.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Thumbnail do clipe">
+                    <div class="clip-item-info"><strong>Clipe 3</strong><span>1:12s | Pontuação: 92</span></div>
+                </div>
+                 <div class="clip-item">
+                    <img src="https://images.pexels.com/photos/257904/pexels-photo-257904.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Thumbnail do clipe">
+                    <div class="clip-item-info"><strong>Clipe 4</strong><span>0:33s | Pontuação: 90</span></div>
+                </div>
+            </div>
+        </aside>
+
+        <main class="video-preview-panel">
+            <div class="video-player-wrapper" id="video-player-wrapper">
+                <video src="https://assets.mixkit.co/videos/preview/mixkit-business-people-in-a-meeting-2215-large.mp4" poster="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" controls class="main-video-player" id="main-video-player"></video>
+            </div>
+            <div class="timeline-controls">
+                <div class="timeline">
+                    <div class="timeline-handle start"></div>
+                    <div class="timeline-progress"></div>
+                    <div class="timeline-handle end"></div>
+                </div>
+            </div>
+        </main>
+
+        <aside class="tools-panel">
+            <h4><i class="fas fa-tools"></i> Ferramentas</h4>
+            <div class="tool-group">
+                <h5>Estilo da Legenda</h5>
+                <div class="style-options" id="style-options">
+                    <button class="style-btn active" data-style="Padrão">Padrão</button>
+                    <button class="style-btn" data-style="Impacto">Impacto</button>
+                    <button class="style-btn" data-style="Neon">Neon</button>
+                </div>
+            </div>
+            <div class="tool-group">
+                <h5>Adicionar Elementos</h5>
+                <button class="tool-btn" id="add-text-btn"><i class="fas fa-font"></i> Adicionar Texto</button>
+                <button class="tool-btn" id="add-logo-btn"><i class="fas fa-image"></i> Adicionar Logo</button>
+            </div>
+             <div class="tool-group">
+                <h5>Música de Fundo</h5>
+                <button class="tool-btn" id="add-music-btn"><i class="fas fa-music"></i> Escolher Música</button>
+            </div>
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
